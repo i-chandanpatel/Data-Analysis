@@ -64,6 +64,4 @@ if __name__ == "__main__":
 # - **Explanation**: The condition `if __name__ == "__main__":` checks if the script is being run directly. If true, it calls the `main()` function.
 
 ### Summary
-# - **Different Data Structures**: The code demonstrates how to use tuples, lists, and dictionaries to store and access data.
-# - **Readability and Flexibility**: Using a dictionary makes the code more readable and flexible, as you can access values using descriptive keys rather than indices.
 # - **Modular Code**: The conditional execution ensures that the `main()` function runs only when intended, making the code modular and reusable.
