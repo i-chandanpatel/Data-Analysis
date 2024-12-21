@@ -65,3 +65,18 @@ if __name__ == "__main__":
 
 ### Summary
 # - **Modular Code**: The conditional execution ensures that the `main()` function runs only when intended, making the code modular and reusable.
+
+#Functions with Paremeters
+def areaOfSquare(side):
+    print("Area of Square is ",side*side)
+areaOfSquare(2)
+
+def names(*name):
+    print(name)
+names(["A","B"])
+names("A","B")
+
+#Lambda Function
+a=lambda a,b,c:(a+b)*c
+result=a(2,3,4)
+print(result)
