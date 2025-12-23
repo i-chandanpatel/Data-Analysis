@@ -125,37 +125,112 @@ while(a<10):
         break       #Breaks the loop when a==4
     a+=1
 
+
 #Strings
-a="Hello this is python code. {}"
-print("Len :",len(a))
-print("Count :",a.count("o"))
+
+a = "Hello this is python code. {}"  
+print("Len :", len(a))  
+print("Count :", a.count("o"))  
 print("Upper :", a.upper())
-print("Lower :",a.lower())
-print("Find: ",a.find("t",8))
-print("Capitalize: ",a.capitalize())
-print("Casefold: ",a.casefold())
-b="This is Denver"
-print("Formate: ",a.format(b))
-print("Center :",a.center(10,"*"))
-c=12
-print("Is Integer :",c.is_integer())
-print("Is digit :",str(c).isdigit())     #isdigit is a string function not work on integer datatype
+print("Lower :", a.lower())
 
-c="12"
-print(c.isnumeric())
+print("Find: ", a.find("t", 8))  
+# find("t", 8) → finds first 't' starting from index 8
+# returns index position, -1 if not found
+# Output: Find:  10
 
-print("Starts with: ", a.startswith("Hello"))
-print("Ends with: ",a.endswith("{}"))
-a="          He$lo "
-print("Strip: ",a.strip())
-print("Split: ",a.split("$"))
 
-print("ljust: ",a.strip().ljust(20,"*"))
-print("rjust: ",a.strip().rjust(20,"*"))
-a=a.replace("$","l")
-print("Replace: ",a)
-print("index: ",a.index("l"))
-print("rindex: ",a.rindex("l"))
+print("Capitalize: ", a.capitalize())  
+# capitalize() → makes first character uppercase, rest lowercase
+# Output: Hello this is python code. {}
+
+
+print("Casefold: ", a.casefold())  
+# casefold() → aggressive lowercase (used for comparisons)
+# Output: hello this is python code. {}
+
+
+b = "This is Denver"
+print("Format: ", a.format(b))  
+# format(b) → replaces {} with value of b
+# Output: Hello this is python code. This is Denver
+
+
+print("Center :", a.center(10, "*"))  
+# center(width, fillchar) → centers string in given width
+# No change because width < string length
+# Output: Hello this is python code. {}
+
+c = "Python"
+print("Center :", c.center(20, "*"))
+# center(20, "*") → makes total length = 20
+# adds '*' equally on left and right
+# Output: ******Python*******
+
+c = 12
+# print(c.is_integer())  ❌ ERROR (int has no is_integer method)
+
+print("Is digit :", str(c).isdigit())  
+# isdigit() → checks if all characters are digits
+# c is converted to string first
+# Output: True
+
+
+c = "12"
+print(c.isnumeric())  
+# isnumeric() → checks if string contains all numeric characters
+# Output: True
+
+
+print("Starts with: ", a.startswith("Hello"))  
+# startswith() → checks if string begins with given text
+# Output: True
+
+
+print("Ends with: ", a.endswith("{}"))  
+# endswith() → checks if string ends with given text
+# Output: True
+
+
+a = "          He$lo "
+# String with leading & trailing spaces and special character $
+
+print("Strip: ", a.strip())  
+# strip() → removes leading & trailing spaces only
+# Output: He$lo
+
+
+print("Split: ", a.split("$"))  
+# split("$") → splits string into list using $ as separator
+# Output: ['          He', 'lo ']
+
+
+print("ljust: ", a.strip().ljust(20, "*"))  
+# ljust(width, fillchar) → left-aligns string, fills right side
+# Output: He$lo***************
+
+
+print("rjust: ", a.strip().rjust(20, "*"))  
+# rjust(width, fillchar) → right-aligns string, fills left side
+# Output: ***************He$lo
+
+
+a = a.replace("$", "l")  
+# replace("$","l") → replaces $ with l
+
+print("Replace: ", a)  
+# Output:            Hello 
+
+
+print("index: ", a.index("l"))  
+# index("l") → returns first index of 'l'
+# raises error if character not found
+# Output: 12
+
+
+print("rindex: ", a.rindex("l"))  
+# rindex("l") → returns last index of 'l'
+# Output: 14
 
 
 #Lists
