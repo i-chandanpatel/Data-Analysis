@@ -287,7 +287,11 @@ print("After popitem:", student)
 student.clear()
 print("After clear:", student)
 
+student[10]=300;  #Change value for the key, but if not present already than add it with the value 
 
+print(student)
+
+del student[10] # Deletes specified key and its value 
 #Sets
 print("\n\n Sets \n\n")
 a={"Captain America", "Hulk", "Thor"}
