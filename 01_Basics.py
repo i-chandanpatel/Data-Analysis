@@ -47,22 +47,12 @@ print("a is not c ",a is not c)
 
 #Bitwise Operators
 print("Binary of 15 is ", bin(15))
-print("Binary of 15 is ", bin(10))
+print("Binary of 10 is ", bin(10))
 
-#AND "&" Operator:
-    #Works in binary form
-     #  0 0 = 0
-     #  1 0 = 0
-     #  0 1 = 0
-     #  1 1 = 1
+#AND "&" Operator
 print("15 & 10: ", 15&10)
 
-#OR "|" Operator:
-    #Works in binary form
-     #  0 0 = 0
-     #  1 0 = 1
-     #  0 1 = 1
-     #  1 1 = 1
+#OR "|" Operator
 print("15 | 10: ", 15|10)
 
 #XOR "^" Operator:
@@ -134,27 +124,19 @@ print("Count :", a.count("o"))
 print("Upper :", a.upper())
 print("Lower :", a.lower())
 
-print("Find: ", a.find("t", 8))  
-# find("t", 8) → finds first 't' starting from index 8
+print("Find: ", a.find("t", 8)) #find first 't' starting from index 8
 # returns index position, -1 if not found
-# Output: Find:  10
-
 
 print("Capitalize: ", a.capitalize())  
 # capitalize() → makes first character uppercase, rest lowercase
-# Output: Hello this is python code. {}
-
 
 print("Casefold: ", a.casefold())  
 # casefold() → aggressive lowercase (used for comparisons)
 # Output: hello this is python code. {}
 
-
 b = "This is Denver"
 print("Format: ", a.format(b))  
 # format(b) → replaces {} with value of b
-# Output: Hello this is python code. This is Denver
-
 
 print("Center :", a.center(10, "*"))  
 # center(width, fillchar) → centers string in given width
@@ -181,39 +163,26 @@ print(c.isnumeric())
 # isnumeric() → checks if string contains all numeric characters
 # Output: True
 
-
-print("Starts with: ", a.startswith("Hello"))  
-# startswith() → checks if string begins with given text
-# Output: True
-
-
-print("Ends with: ", a.endswith("{}"))  
-# endswith() → checks if string ends with given text
-# Output: True
+print("Starts with: ", a.startswith("Hello"))
+print("Ends with: ",a.endswith("{}"))
 
 
 a = "          He$lo "
-# String with leading & trailing spaces and special character $
-
 print("Strip: ", a.strip())  
 # strip() → removes leading & trailing spaces only
 # Output: He$lo
-
 
 print("Split: ", a.split("$"))  
 # split("$") → splits string into list using $ as separator
 # Output: ['          He', 'lo ']
 
-
 print("ljust: ", a.strip().ljust(20, "*"))  
 # ljust(width, fillchar) → left-aligns string, fills right side
 # Output: He$lo***************
 
-
 print("rjust: ", a.strip().rjust(20, "*"))  
 # rjust(width, fillchar) → right-aligns string, fills left side
 # Output: ***************He$lo
-
 
 a = a.replace("$", "l")  
 # replace("$","l") → replaces $ with l
