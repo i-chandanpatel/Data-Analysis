@@ -274,21 +274,49 @@ print("Count", d.count("Abc"))
 print("Len",len(d))
 
 
-#Dictionary
-print("\n\n Dictionary \n\n")
-dict={"birth_year":2003, "roll-num":20}
+# Dictionary in Python
 
-print(type(dict))
-print("Keys: ",dict.keys())
-print("Values: ",dict.values())
-print("Both values: ",dict.items())
-print("Roll num using Get function ",dict.get("roll-num"))
-print("setdefault: if key exist than returns val from dictionary if not, than provided value*(Denver): ",dict.setdefault("Name","Denver"))
-dict.update({"roll-num": 27,"Number": 4254627})
-print("Update: ",dict)
-print("Popped: ",dict.pop("Number"))
-print("Popitem: ",dict.popitem())
-print("Clear: ",dict.clear())
+print("\n\n Dictionary \n\n")
+student = {
+    "birth_year": 2003,
+    "roll-num": 20
+}
+print(type(student))           # <class 'dict'>
+print("Keys:", student.keys())
+print("Values:", student.values())
+print("Both values:",student.items())
+
+# get() → safely fetches value using key
+# If key doesn't exist, it returns None instead of error
+print("Roll num using get():", student.get("roll-num"))
+
+# setdefault(key, value)
+# If key EXISTS → returns existing value
+# If not→insert key with given value
+print(
+    "setdefault():",   student.setdefault("Name","Denver"))
+
+# Dictionary now contains "Name"
+print("After setdefault:", student)
+
+# update() → modifies existing keys OR adds new ones
+student.update({
+    "roll-num": 27,      # existing key → value updated
+    "Number": 4254627    # new key → added
+})
+
+print("After update:", student)
+
+# pop(key) → removes key and returns its value
+print("Popped value:", student.pop("Number"))
+
+print("After pop:", student)
+
+# popitem() → removes and returns LAST inserted key-value pair
+print("Popitem:", student.popitem())
+print("After popitem:", student)
+student.clear()
+print("After clear:", student)
 
 
 #Sets
