@@ -58,19 +58,10 @@ def print_details(**kwargs):
 
 
 def decorate(func):
-    # func receives the function to be decorated
-
     def wrapper(*args, **kwargs):
-        # Runs before the original function
         print("The addition of your numbers is:")
-
-        # Call the original function with any arguments
         result = func(*args, **kwargs)
-
-        # Runs after the original function
         print("Thank you! I hope you liked it.")
-
-        # Return original function result (important)
         return result
 
     return wrapper
