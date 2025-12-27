@@ -7,6 +7,9 @@
 
 # Using lambda
 # Syntax- lambda args : expression
-# As lambda expression is anonymous function need to store it in a variable and with the help of that variable we are able to call it
+# As lambda expression is anonymous function need to store it in a variable and with the help of that variable we are able to call it later or can call it immediately 
+
 add = lambda a, b: a + b
 print(add(10, 20))
+
+print((lambda a, b: a * b)(5, 7))
