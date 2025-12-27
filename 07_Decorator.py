@@ -30,3 +30,47 @@ addition = decorate(addition)
 # Calling the wrapped function
 addition(10, 20)
 
+
+
+# *args -Use to store multiple arguments. args is not mandatory it can be of any name
+def add_numbers(*args):
+    # args is a tuple of all passed values
+    print("Received arguments:", args)
+
+    total = 0
+    for num in args:
+        total += num
+
+    return total
+
+
+# **kwargs - Stores multiple keywords arguments. kwargs not mandatory it can be of any name
+def print_details(**kwargs):
+    # kwargs is a dictionary
+    print("Received keyword arguments:", kwargs)
+
+    for key, value in kwargs.items():
+        print(f"{key} : {value}")
+
+
+
+
+
+
+def decorate(func):
+    # func receives the function to be decorated
+
+    def wrapper(*args, **kwargs):
+        # Runs before the original function
+        print("The addition of your numbers is:")
+
+        # Call the original function with any arguments
+        result = func(*args, **kwargs)
+
+        # Runs after the original function
+        print("Thank you! I hope you liked it.")
+
+        # Return original function result (important)
+        return result
+
+    return wrapper
