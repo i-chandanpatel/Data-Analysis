@@ -202,6 +202,38 @@ print("rindex: ", a.rindex("l"))
 # Output: 14
 
 
+g = "1.234"
+
+# isalnum - Returns True if all characters in the string are alphanumeric
+print(f"isalnum: {g.isalnum()}") 
+
+# isalpha - Returns True if all characters in the string are in the alphabet
+print(f"isalpha: {g.isalpha()}")
+
+# isdecimal - Returns True if all characters in the string are decimals
+print(f"isdecimal: {g.isdecimal()}")
+
+# isdigit - Returns True if all characters in the string are digits
+print(f"isdigit: {g.isdigit()}")
+
+# isnumeric - Returns True if all characters in the string are numeric
+print(f"isnumeric: {g.isnumeric()}")
+
+# islower - Returns True if all cased characters in the string are lowercase
+# (Note: The original image comment said 'converts', but .islower() is a check)
+print(f"islower: {g.islower()}")
+
+# isupper - Returns True if all characters in the string are upper case
+print(f"isupper: {g.isupper()}")
+
+# isspace - Returns True if all characters in the string are whitespaces
+print(f"isspace: {g.isspace()}")
+
+# istitle - Returns True if the string follows the rules of a title
+print(f"istitle: {g.istitle()}")
+
+
+
 #Lists
 print("\n\n Lists \n\n")
 a=["Hulk","Denver","Professor","Berlin","Hulk"]
