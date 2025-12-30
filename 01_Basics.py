@@ -89,7 +89,7 @@ elif(c<5):
 else:
     print("c==5")
 
-#Shorthand
+#Shorthand if-else
 print("Greator than 4") if c>4 else print("Less than 4")
 
 #Loops
@@ -219,6 +219,7 @@ print("Index: ", a.index("Berlin"))
 print("Extend: ",a.extend(b))
 print("Reverse: ",a.reverse())
 print("Sort: ",a.sort())
+[print(i) for i in a]    #Shorthand for loop
 a.clear()
 
 
