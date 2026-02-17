@@ -31,8 +31,9 @@ print("a ",a)
 print("b ",b)
 
 
-#Arithmetic Operators: "+", "-", "/", "*", "%", Power: "**"
+#Arithmetic Operators: "+", "-", "/",Floor Division "//", "*", "%", Power: "**"
 #Comparision Operators: "<", ">", "<=", ">=", "!=", "=="
+#Internelly if compared than the String will be compared using ASCII code but we can't compare String with a number
 #Logical Operators: and, or, not
 #Assignment Operators: "=", "+=", "-=", "*=", "/="
 
