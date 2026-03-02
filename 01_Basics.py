@@ -93,6 +93,20 @@ else:
 #Shorthand if-else
 print("Greator than 4") if c>4 else print("Less than 4")
 
+#Match
+
+match c:
+    case 1:
+        print("Value is 1")
+    case 2:
+        print("Value is 2")
+    case value if value > 3:
+        print("Value is greater than 3")
+    case _:
+        print("Other value")
+
+
+
 #Loops
 
 #for loop
