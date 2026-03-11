@@ -1,9 +1,11 @@
-a + b  →  a.__add__(b)
-print(a) → a.__str__()
 """
 ===========================================================
 FILE: dunder_add_str_demo.py
 Concept: __add__ and __str__ special methods
+
+Some internal working
+a + b  →  a.__add__(b)
+print(a) → a.__str__()
 ===========================================================
 
 Dunder = Double underscore methods.
